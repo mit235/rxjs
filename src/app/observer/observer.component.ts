@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Subscription, interval, take, toArray } from 'rxjs';
 
 @Component({
   selector: 'app-observer',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./observer.component.css']
 })
 export class ObserverComponent {
+
+
 
 }

@@ -1,0 +1,15 @@
+<p>cusobs works!</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+
+            <div class="card-header">List from custom observable</div>
+            <div class="card-body">
+                <!-- <ul id="elContainer" [ngClass]="techStatus=='completed'?'complete':'error'">
+                </ul> -->
+                <ul id="elContainer" [ngClass]="techStatus=='completed'?'complete':techStatus=='error'?'error':''">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
