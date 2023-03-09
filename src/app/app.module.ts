@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PromiseComponent } from './promise/promise.component';
@@ -16,6 +16,7 @@ import { PulkComponent } from './observer/pulk/pulk.component';
 import { FilterComponent } from './observer/filter/filter.component';
 import { TapComponent } from './observer/tap/tap.component';
 import { TakeComponent } from './observer/take/take.component';
+import { RetryComponent } from './observer/retry/retry.component';
 
 @NgModule({
   declarations: [
@@ -32,9 +33,12 @@ import { TakeComponent } from './observer/take/take.component';
     PulkComponent,
     FilterComponent,
     TapComponent,
-    TakeComponent
+    TakeComponent,
+    RetryComponent,
+    
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],

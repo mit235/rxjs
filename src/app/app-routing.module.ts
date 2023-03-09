@@ -13,6 +13,7 @@ import { PulkComponent } from './observer/pulk/pulk.component';
 import { FilterComponent } from './observer/filter/filter.component';
 import { TapComponent } from './observer/tap/tap.component';
 import { TakeComponent } from './observer/take/take.component';
+import { RetryComponent } from './observer/retry/retry.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
       { path: 'filter', component:FilterComponent},
       { path: 'tap', component:TapComponent},
       { path: 'take', component:TakeComponent},
+      { path: 'retry', component:RetryComponent},
     ],
   },
 ];
